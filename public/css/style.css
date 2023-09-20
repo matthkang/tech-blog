@@ -92,6 +92,11 @@ p {
   box-shadow: 2px 2px var(--dark);
 }
 
+.nav {
+  background-color: var(--dark);
+  color: var(--primary);
+}
+
 .hero {
   padding: 3% 4%;
   background-color: var(--dark);
@@ -170,6 +175,12 @@ p {
   display: block;
 }
 
+form .form-group {
+  display: block;
+  width: 100%;
+  margin: 0.625rem 0;
+}
+
 .form-label {
   font-size: 1.1rem;
   margin: 0 0 0 5px;
@@ -183,6 +194,8 @@ p {
   border: 2px solid var(--light-dark);
   border-radius: var(--border-radius);
 }
+
+
 
 /* HEIGHT / WIDTH UTILS */
 .min-100-vh {
