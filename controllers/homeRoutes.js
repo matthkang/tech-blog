@@ -40,8 +40,18 @@ router.get('/post/:id', async (req, res) => {
 
     const post = postData.get({ plain: true });
 
-    res.render('post', {
+    res.render('editPost', {
       ...post,
+      logged_in: req.session.logged_in
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get('/createPost', async (req, res) => {
+  try {
+    res.render('createPost', {
       logged_in: req.session.logged_in
     });
   } catch (err) {
