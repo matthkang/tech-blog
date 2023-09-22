@@ -186,9 +186,10 @@ form .form-group {
   margin: 0 0 0 5px;
 }
 
-.form-input {
+.form-input,
+.form-textarea {
   width: 100%;
-  padding: 3%;
+  padding: 1%;
   margin: 5px 0;
   font-size: 1.2rem;
   border: 2px solid var(--light-dark);

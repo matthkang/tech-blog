@@ -15,6 +15,27 @@ router.post('/', withAuth, async (req, res) => {
   }
 });
 
+router.put('/:id', async (req, res) => {
+  // update a post by its `id` value
+  try {
+    const dish = await Post.update(
+    {
+      title: req.body.title,
+      content: req.body.content,
+    },
+    {
+      where: {
+        id: req.params.id,
+      },
+    });
+    // TODO: If the database is updated successfully, what happens to the updated data below?
+    // returns json of data to view
+    res.status(200).json(dish);
+  } catch (err) {
+      res.status(500).json(err);
+    };
+});
+
 router.delete('/:id', withAuth, async (req, res) => {
   try {
     const postData = await Post.destroy({
