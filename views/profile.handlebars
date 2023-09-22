@@ -2,6 +2,9 @@
   <div class="col-auto">
     <h2>Welcome, {{name}}!</h2>
   </div>
+  <div class="col-auto">
+    <button id="create" class="btn">New Post</button>
+  </div>
 </div>
 
 <div class="container container-fluid mt-5">
@@ -9,8 +12,15 @@
   {{#each posts as |post|}}
   <div class="card">
     <a href="/post/{{post.id}}">
-      <h3 class="card-header">{{post.title}}
-        Created on {{format_date post.date_created}}
+      <h3 class="card-header">
+        <div class="row">
+          <div class="col-auto">
+            {{post.title}}
+          </div>
+          <div class="col-auto">
+            Created on {{format_date post.date_created}}
+          </div>
+        </div>
       </h3>
     </a>
   </div>
