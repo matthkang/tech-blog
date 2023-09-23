@@ -39,6 +39,14 @@ Example of homepage for tech blog:
 
 ![Tech Blog](images/tech-blog.png)
 
+Deplyed Application:  
+[Heroku](https://github.com/matthkang)
+
+Use test username and password:
+```
+username: Xandromus
+password: password12345
+```
 
 ---
 
@@ -48,6 +56,6 @@ No tests
 
 ## Questions
 
-Take a look at my other projects: [GitHub Profile](https://github.com/matthkang)
+Take a look at my other projects: [GitHub Profile](tech-blog-mk-be274da16b7b.herokuapp.com)
 
 You can reach me via email at: [matthkang@gmail.com](mailto:matthkang@gmail.com)
