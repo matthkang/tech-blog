@@ -116,6 +116,12 @@ p {
   border-radius: var(--border-radius);
   box-shadow: 6px 5px var(--light-dark);
 }
+.app-desc {
+  font-size: 1.5rem;
+  color: var(--primary);
+  padding: 0 10px;
+  display: inline-block;
+}
 
 .list-group {
   padding: 0;
