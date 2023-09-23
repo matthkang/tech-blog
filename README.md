@@ -40,7 +40,7 @@ Example of homepage for tech blog:
 ![Tech Blog](images/tech-blog.png)
 
 Deplyed Application:  
-[Heroku](https://github.com/matthkang)
+[Heroku](https://tech-blog-mk-be274da16b7b.herokuapp.com/)
 
 Use test username and password:
 ```
